@@ -15,6 +15,8 @@
 		9C3093F726F11DCB00CF07D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3093F526F11DCB00CF07D8 /* LaunchScreen.storyboard */; };
 		9C30940226F11DCB00CF07D8 /* DestinyGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C30940126F11DCB00CF07D8 /* DestinyGameTests.swift */; };
 		9C30940D26F11DCB00CF07D8 /* DestinyGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C30940C26F11DCB00CF07D8 /* DestinyGameUITests.swift */; };
+		9C30941D26F1370B00CF07D8 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C30941C26F1370B00CF07D8 /* Story.swift */; };
+		9C30941F26F1371C00CF07D8 /* StoryBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C30941E26F1371C00CF07D8 /* StoryBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		9C30940826F11DCB00CF07D8 /* DestinyGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DestinyGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C30940C26F11DCB00CF07D8 /* DestinyGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinyGameUITests.swift; sourceTree = "<group>"; };
 		9C30940E26F11DCB00CF07D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C30941C26F1370B00CF07D8 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		9C30941E26F1371C00CF07D8 /* StoryBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +105,12 @@
 			children = (
 				9C3093EA26F11DC900CF07D8 /* AppDelegate.swift */,
 				9C3093EC26F11DC900CF07D8 /* SceneDelegate.swift */,
-				9C3093EE26F11DC900CF07D8 /* ViewController.swift */,
-				9C3093F026F11DC900CF07D8 /* Main.storyboard */,
+				9C30941B26F136F100CF07D8 /* Controller */,
+				9C30941A26F136E800CF07D8 /* View */,
 				9C3093F326F11DCB00CF07D8 /* Assets.xcassets */,
 				9C3093F526F11DCB00CF07D8 /* LaunchScreen.storyboard */,
 				9C3093F826F11DCB00CF07D8 /* Info.plist */,
+				9C30942026F1372500CF07D8 /* Model */,
 			);
 			path = DestinyGame;
 			sourceTree = "<group>";
@@ -126,6 +131,31 @@
 				9C30940E26F11DCB00CF07D8 /* Info.plist */,
 			);
 			path = DestinyGameUITests;
+			sourceTree = "<group>";
+		};
+		9C30941A26F136E800CF07D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9C3093F026F11DC900CF07D8 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9C30941B26F136F100CF07D8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9C3093EE26F11DC900CF07D8 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9C30942026F1372500CF07D8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9C30941C26F1370B00CF07D8 /* Story.swift */,
+				9C30941E26F1371C00CF07D8 /* StoryBrain.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +288,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C30941F26F1371C00CF07D8 /* StoryBrain.swift in Sources */,
 				9C3093EF26F11DC900CF07D8 /* ViewController.swift in Sources */,
 				9C3093EB26F11DC900CF07D8 /* AppDelegate.swift in Sources */,
 				9C3093ED26F11DC900CF07D8 /* SceneDelegate.swift in Sources */,
+				9C30941D26F1370B00CF07D8 /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
