@@ -16,7 +16,12 @@ class ViewController: UIViewController {
     
     
     @IBAction func choiceMade(_ sender: UIButton) {
-        storyBrain.nextStory(userChoice: sender.currentTitle!)
+        if(sender.currentTitle == firstChoiceButton.currentTitle){
+            storyBrain.nextStory(userChoice: "Choice 1")
+        }
+        else{
+            storyBrain.nextStory(userChoice: "Choice 2")
+        }
         updateUI(storyBrain.userPosition)
     }
     
